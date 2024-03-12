@@ -2,9 +2,8 @@
   /* https://www.w3schools.com/css/css3_variables.asp */
   
   form {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    border: 1px solid #ccc;
+    justify-content: start;
+    border: 1px solid #ffdcec;
     border-radius: 16px;
     width:70%;
     margin: 20px auto;
@@ -25,29 +24,36 @@
   }
 
   #name {
-    width: 100%;
+    max-width: 100%;
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
     background: white;
-    color: #9B9A6D;
+    color: #740068;
   }
 
   #message {
-    width: 100%;
+    max-width: 100%;
     padding: 10px;
     resize: vertical;
+  }
+
+  #inputName {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    justify-content: start;
   }
 
   input,
   textarea {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffdcec;
     width: 100%;
+    position: relative;
   }
 
   input[type="submit"] {
-    width: 100%;
+    max-width: 100%;
     padding: 10px;
     background-color:#d2008f;
     color: white;
